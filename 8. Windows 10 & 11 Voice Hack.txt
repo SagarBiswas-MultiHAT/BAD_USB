@@ -1,0 +1,28 @@
+#include <DigiKeyboard.h>
+
+void setup() {
+  // Nothing to initialize for Digispark
+}
+
+void loop() {
+  // Open Run dialog
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  DigiKeyboard.delay(1000); // Wait for the Run dialog to open
+
+  // Type 'powershell' and press Enter to open PowerShell
+  DigiKeyboard.print("powershell");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(2000); // Wait for PowerShell to open
+
+  // Type the simplified PowerShell command
+  DigiKeyboard.print("Add-Type -AssemblyName System.Speech; ");
+  // DigiKeyboard.delay(1000); // Short delay
+  DigiKeyboard.print("(New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('Greetings, Sagar Biswas. Your Windows system has been completely pwned and will soon be fucked beyond repair. You have been thoroughly hacked by a malicious motherfucker like me. Get ready to kiss your digital ass goodbye, bitch.');");
+  // DigiKeyboard.delay(1000); // Short delay
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+
+  // Exit loop
+  while (true) {
+    // Do nothing, just keep looping indefinitely
+  }
+}

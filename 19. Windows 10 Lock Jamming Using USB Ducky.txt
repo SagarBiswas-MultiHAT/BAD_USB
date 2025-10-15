@@ -1,0 +1,10 @@
+#include "DigiKeyboard.h"
+void setup() {
+  //empty
+}
+void loop() {
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.sendKeyStroke(KEY_L, MOD_GUI_LEFT);
+  DigiKeyboard.delay(1500);
+  
+}

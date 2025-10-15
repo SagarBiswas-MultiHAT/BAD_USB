@@ -1,0 +1,7 @@
+1. Rubber Ducky Setup.
+
+Arduino Software Download: https://downloads.arduino.cc/arduino-1.8.15-windows.exe
+
+url Link : http://digistump.com/package_digistump_index.json
+
+Driver Link:  https://www.mediafire.com/file/dilupux4r1xax36/Digistump_Drivers.zip/file

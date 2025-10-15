@@ -1,0 +1,14 @@
+#include "DigiKeyboard.h"
+void setup() {
+  //empty
+}
+void loop() {
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.print("https://www.youtube.com/watch?v=oUp4SWSrYYk&list=PLoDyTiBqPde03RWiyePNQ4gYUqfPP-YA3&index=4");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(2000);
+  for(;;){ /*empty*/ }
+}
